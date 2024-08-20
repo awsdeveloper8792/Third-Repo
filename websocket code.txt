@@ -1,0 +1,12 @@
+import json
+import urllib3
+import boto3
+
+client=boto3.client('apigatewaymanagementapi',endpoint_url="")
+
+def lambda_handler(event,context):
+    print(event)
+    connectionId = event["requestContext"]["connectionId"]
+    responseMessage = "responding.."
+    response = client.post_to_connection(ConnectionId=connectionId,Data=json.dumps("responding").encode('utf-8'))
+    return { "statusCode":200 }
