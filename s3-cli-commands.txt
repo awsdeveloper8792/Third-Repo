@@ -1,0 +1,22 @@
+https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html
+
+
+ 1 clear
+   2 aws --version
+   3 aws configure
+   4 clear
+   5 aws ec2 create-security-group --group-name my-sg --description "My security group"
+   6 clear
+   7 aws configure
+   8 clear
+   9 aws ec2 create-security-group --group-name my-sg --description "My security group"
+  10 clear
+  11 aws s3 mb s3://new9034
+  12 aws s3 ls
+  13 aws s3 ls s3://new9034
+  14 aws s3 ls s3://demobucket8087
+  15 aws s3 mb s3://new3097
+  16 aws s3 rb s3://new3097
+  17 aws s3 rm s3://demobucket8087/23-11-2023.txt
+  18 clear
+  19 aws s3 mv s3://demobucket8087/Crontab.txt  s3://new9034/
